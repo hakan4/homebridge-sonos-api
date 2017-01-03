@@ -28,7 +28,7 @@ SonosAccessory.prototype.getOn = function(callback) {
 }
 
 SonosAccessory.prototype.setOn = function(on, callback) {
-    const url = on ? 'favorite/starred' : 'stop';
+    const url = on ? 'favorite/starred' : 'pause';
     request.get({
         url: 'http://localhost:5005/Living Room/' + url
     }, function(err, response, body) {
