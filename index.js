@@ -4,7 +4,7 @@ var Service, Characteristic;
 module.exports = function(homebridge) {
     Service = homebridge.hap.Service;
     Characteristic = homebridge.hap.Characteristic;
-    homebridge.registerAccessory("homebridge-sonos", "Sonos-api", SonosAccessory);
+    homebridge.registerAccessory("homebridge-sonos-api", "SonosApi", SonosAccessory);
 }
 
 function SonosAccessory(log, config) {

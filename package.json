@@ -1,5 +1,5 @@
 {
-  "name": "sonos-plugin",
+  "name": "homebirdge-sonos-api",
   "version": "1.0.0",
   "description": "Sonos plugin",
   "main": "index.js",
