@@ -23,9 +23,8 @@ SonosAccessory.prototype.getOn = function(callback) {
     request.get({
         url: 'http://localhost:5005/Living Room/state'
     }, function(err, response, body) {
-        console.log('B: ' + body);
-        console.log('B2: ' + JSON.parse(body));
-        callback(null, body.playbackState === 'PLAYING');
+        const state = JSON.parse(body);
+        callback(null, state.playbackState === 'PLAYING');
     }.bind(this));
 }
 
