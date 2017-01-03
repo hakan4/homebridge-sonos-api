@@ -1,0 +1,21 @@
+{
+  "name": "sonos-plugin",
+  "version": "1.0.0",
+  "description": "Sonos plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+   "keywords": [
+    "homebridge-plugin"
+  ],
+  "engines": {
+    "node": ">=0.12.0",
+    "homebridge": ">=0.2.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.79.0"
+  }
+}
