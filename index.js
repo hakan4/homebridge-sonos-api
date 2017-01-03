@@ -23,7 +23,7 @@ SonosAccessory.prototype.getOn = function(callback) {
     request.get({
         url: 'http://localhost:5005/Living Room/status'
     }, function(err, response, body) {
-        callback(null, body.playbackState === 'PLAYING'; );
+        callback(null, body.playbackState === 'PLAYING');
     }.bind(this));
 }
 
